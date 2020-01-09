@@ -9,7 +9,6 @@ namespace DevIO.Business.Models
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public int? QuantidadeEstrela { get; set; }
-        public DateTime? DataCadastro { get; set; }
         public string AvaliacaoUtil { get; set; }
 
         public int ProdutoId { get; set; }

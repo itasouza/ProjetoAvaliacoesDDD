@@ -8,7 +8,6 @@ namespace DevIO.Business.Models
     {
         public string NomeUsuario { get; set; }
         public string Email { get; set; }
-        public DateTime? DataCadastro { get; set; }
 
         public ICollection<Avaliacao> Avaliacao { get; set; }
     }
