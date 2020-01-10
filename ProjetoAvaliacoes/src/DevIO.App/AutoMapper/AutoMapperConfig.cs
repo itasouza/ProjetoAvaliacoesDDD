@@ -10,7 +10,6 @@ namespace DevIO.App.AutoMapper
         //configurando a relação do Model com o ViewModels
         public AutoMapperConfig()
         {
-            CreateMap<Entity, EntityViewModel>().ReverseMap();
             CreateMap<Avaliacao, AvaliacaoViewModel>().ReverseMap();
             CreateMap<Cidade, CidadeViewModel>().ReverseMap();
             CreateMap<Cliente, ClienteViewModel>().ReverseMap();

@@ -3510,19 +3510,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PCEstudo\\.nuget\\packages\\": {}
+    "C:\\Users\\isouza\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\src\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\DevIO.Data.csproj",
+      "projectUniqueName": "C:\\GitHub\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\DevIO.Data.csproj",
       "projectName": "DevIO.Data",
-      "projectPath": "C:\\src\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\DevIO.Data.csproj",
-      "packagesPath": "C:\\Users\\PCEstudo\\.nuget\\packages\\",
-      "outputPath": "C:\\src\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\obj\\",
+      "projectPath": "C:\\GitHub\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\DevIO.Data.csproj",
+      "packagesPath": "C:\\Users\\isouza\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHub\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Data\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PCEstudo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\isouza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3530,13 +3534,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://imperiointeligencia.pkgs.visualstudio.com/_packaging/atlas_cargo/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\src\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Business\\DevIO.Business.csproj": {
-              "projectPath": "C:\\src\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Business\\DevIO.Business.csproj"
+            "C:\\GitHub\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Business\\DevIO.Business.csproj": {
+              "projectPath": "C:\\GitHub\\ProjetoAvaliacoesDDD\\ProjetoAvaliacoes\\src\\DevIO.Business\\DevIO.Business.csproj"
             }
           }
         }
