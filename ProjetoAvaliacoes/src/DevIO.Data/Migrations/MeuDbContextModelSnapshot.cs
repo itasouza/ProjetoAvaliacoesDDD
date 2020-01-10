@@ -25,10 +25,16 @@ namespace DevIO.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("AvaliacaoUtil")
-                        .HasColumnType("varchar(100)")
+                    b.Property<string>("Ativo")
                         .HasMaxLength(1)
                         .IsUnicode(false);
+
+                    b.Property<string>("AvaliacaoUtil")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime?>("DataCadastro")
                         .HasColumnType("datetime");
@@ -36,24 +42,199 @@ namespace DevIO.Data.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("text");
 
-                    b.Property<int>("ProdutoId");
+                    b.Property<int>("PedidoDetalheId");
 
                     b.Property<int?>("QuantidadeEstrela");
 
                     b.Property<string>("Titulo")
-                        .HasColumnType("varchar(100)")
                         .HasMaxLength(250)
                         .IsUnicode(false);
 
-                    b.Property<int>("UsuarioId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("PedidoDetalheId");
+
+                    b.ToTable("Avaliacoes");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.Cidade", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("EstadoId");
+
+                    b.Property<string>("Nome")
+                        .HasMaxLength(250)
+                        .IsUnicode(false);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EstadoId");
+
+                    b.ToTable("Cidades");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.Cliente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<int?>("CidadeId");
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(250)
+                        .IsUnicode(false);
+
+                    b.Property<int?>("EstadoId");
+
+                    b.Property<string>("NomeCliente")
+                        .HasMaxLength(250)
+                        .IsUnicode(false);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.Estado", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Nome")
+                        .HasMaxLength(250)
+                        .IsUnicode(false);
+
+                    b.Property<string>("Sigla")
+                        .HasMaxLength(2)
+                        .IsUnicode(false);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Estados");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.ImagemProduto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("FotoProduto")
+                        .HasMaxLength(250)
+                        .IsUnicode(false);
+
+                    b.Property<int>("ProdutoId");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ProdutoId");
 
-                    b.HasIndex("UsuarioId");
+                    b.ToTable("ImagemProdutos");
+                });
 
-                    b.ToTable("Avaliacoes");
+            modelBuilder.Entity("DevIO.Business.Models.Pedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<int>("ClienteId");
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<decimal?>("ValorTotal");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Pedidos");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.PedidoDetalhe", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Ativo")
+                        .HasMaxLength(1)
+                        .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("PedidoId");
+
+                    b.Property<int>("ProdutoId");
+
+                    b.Property<int?>("Quantidade");
+
+                    b.Property<decimal?>("ValorProduto");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PedidoId");
+
+                    b.HasIndex("ProdutoId");
+
+                    b.ToTable("PedidoDetalhes");
                 });
 
             modelBuilder.Entity("DevIO.Business.Models.Produto", b =>
@@ -63,9 +244,14 @@ namespace DevIO.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Ativo")
-                        .HasColumnType("varchar(100)")
                         .HasMaxLength(1)
                         .IsUnicode(false);
+
+                    b.Property<DateTime?>("DataAlteracao")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("DataCadastro")
+                        .HasColumnType("datetime");
 
                     b.Property<DateTime?>("DataFabricacao")
                         .HasColumnType("datetime");
@@ -76,18 +262,11 @@ namespace DevIO.Data.Migrations
                     b.Property<string>("DescricaoProduto")
                         .HasColumnType("text");
 
-                    b.Property<string>("FotoProduto")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(250)
-                        .IsUnicode(false);
-
                     b.Property<string>("NomeProduto")
-                        .HasColumnType("varchar(100)")
                         .HasMaxLength(250)
                         .IsUnicode(false);
 
                     b.Property<string>("ProdutoPromocao")
-                        .HasColumnType("varchar(100)")
                         .HasMaxLength(1)
                         .IsUnicode(false);
 
@@ -99,41 +278,49 @@ namespace DevIO.Data.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("DevIO.Business.Models.Usuario", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime?>("DataCadastro")
-                        .HasColumnType("datetime");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(250)
-                        .IsUnicode(false);
-
-                    b.Property<string>("NomeUsuario")
-                        .HasColumnType("varchar(100)")
-                        .HasMaxLength(250)
-                        .IsUnicode(false);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Usuarios");
-                });
-
             modelBuilder.Entity("DevIO.Business.Models.Avaliacao", b =>
                 {
-                    b.HasOne("DevIO.Business.Models.Produto", "Produto")
+                    b.HasOne("DevIO.Business.Models.PedidoDetalhe", "PedidoDetalhe")
                         .WithMany("Avaliacao")
-                        .HasForeignKey("ProdutoId")
-                        .HasConstraintName("FK_Avaliacoes_Produto");
+                        .HasForeignKey("PedidoDetalheId")
+                        .HasConstraintName("FK_Avaliacao_Pedido_Detalhe");
+                });
 
-                    b.HasOne("DevIO.Business.Models.Usuario", "Usuario")
-                        .WithMany("Avaliacao")
-                        .HasForeignKey("UsuarioId")
-                        .HasConstraintName("FK_Avaliacoes_Usuario");
+            modelBuilder.Entity("DevIO.Business.Models.Cidade", b =>
+                {
+                    b.HasOne("DevIO.Business.Models.Estado", "Estado")
+                        .WithMany("Cidade")
+                        .HasForeignKey("EstadoId")
+                        .HasConstraintName("FK_Cidade_Estado");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.ImagemProduto", b =>
+                {
+                    b.HasOne("DevIO.Business.Models.Produto", "Produto")
+                        .WithMany("ImagemProduto")
+                        .HasForeignKey("ProdutoId")
+                        .HasConstraintName("FK_ImagemProduto_Produto");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.Pedido", b =>
+                {
+                    b.HasOne("DevIO.Business.Models.Cliente", "Cliente")
+                        .WithMany("Pedido")
+                        .HasForeignKey("ClienteId")
+                        .HasConstraintName("FK_Pedido_Cliente");
+                });
+
+            modelBuilder.Entity("DevIO.Business.Models.PedidoDetalhe", b =>
+                {
+                    b.HasOne("DevIO.Business.Models.Pedido", "Pedido")
+                        .WithMany("PedidoDetalhe")
+                        .HasForeignKey("PedidoId")
+                        .HasConstraintName("FK__PedidoDetalhe_Pedido");
+
+                    b.HasOne("DevIO.Business.Models.Produto", "Produto")
+                        .WithMany("PedidoDetalhe")
+                        .HasForeignKey("ProdutoId")
+                        .HasConstraintName("FK_PedidoDetalhe_Produto");
                 });
 #pragma warning restore 612, 618
         }

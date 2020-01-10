@@ -6,9 +6,11 @@ namespace DevIO.Business.Models
 {
     public class Cidade : Entity
     {
-        public int EstadoID { get; set; }
+  
         public string Nome { get; set; }
 
-        public ICollection<Cliente> Cliente { get; set; }
+
+        public int EstadoId { get; set; }
+        public  Estado Estado { get; set; }
     }
 }

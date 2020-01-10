@@ -12,17 +12,22 @@ namespace DevIO.Data.Context
         public MeuDbContext(DbContextOptions options) : base(options) { }
 
 
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Avaliacao> Avaliacoes { get; set; }
+        public virtual DbSet<Avaliacao> Avaliacoes { get; set; }
+        public virtual DbSet<Cidade> Cidades { get; set; }
+        public virtual DbSet<Cliente> Clientes { get; set; }
+        public virtual DbSet<Estado> Estados { get; set; }
+        public virtual DbSet<ImagemProduto> ImagemProdutos { get; set; }
+        public virtual DbSet<Pedido> Pedidos { get; set; }
+        public virtual DbSet<PedidoDetalhe> PedidoDetalhes { get; set; }
+        public virtual DbSet<Produto> Produtos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            foreach (var property in modelBuilder.Model.GetEntityTypes()
-                .SelectMany(e => e.GetProperties()
-                    .Where(p => p.ClrType == typeof(string))))
-                property.Relational().ColumnType = "varchar(100)";
+            //foreach (var property in modelBuilder.Model.GetEntityTypes()
+            //    .SelectMany(e => e.GetProperties()
+            //        .Where(p => p.ClrType == typeof(string))))
+            //    property.Relational().ColumnType = "varchar(100)";
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(MeuDbContext).Assembly);
 

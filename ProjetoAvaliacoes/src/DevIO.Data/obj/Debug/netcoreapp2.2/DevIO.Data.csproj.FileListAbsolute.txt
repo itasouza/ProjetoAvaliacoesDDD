@@ -9,3 +9,14 @@ C:\Users\PCEstudo\Desktop\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2
 C:\Users\PCEstudo\Desktop\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
 C:\Users\PCEstudo\Desktop\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.dll
 C:\Users\PCEstudo\Desktop\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.pdb
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.deps.json
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.pdb
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csprojAssemblyReference.cache
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfoInputs.cache
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfo.cs
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.pdb

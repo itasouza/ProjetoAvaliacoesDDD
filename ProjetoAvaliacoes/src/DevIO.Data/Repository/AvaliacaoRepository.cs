@@ -12,17 +12,5 @@ namespace DevIO.Data.Repository
     {
         public AvaliacaoRepository(MeuDbContext context) : base(context) { }
 
-        public async Task<IEnumerable<Avaliacao>> ObterAvaliacoesProdutoUsuario()
-        {
-            return await Db.Avaliacoes.AsNoTracking().Include(f => f.Produto).Include(s => s.Usuario)
-                .OrderBy(p => p.ProdutoId).ToListAsync();
-
-        }
-
-        public async Task<Avaliacao> ObterAvaliacoesProdutoUsuarioEspecifico(int id)
-        {
-            return await Db.Avaliacoes.AsNoTracking().Include(f => f.Produto).Include(s => s.Usuario)
-            .FirstOrDefaultAsync(p => p.Id == id);
-        }
     }
 }

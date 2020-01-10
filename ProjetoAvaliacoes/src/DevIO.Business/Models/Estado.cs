@@ -7,9 +7,9 @@ namespace DevIO.Business.Models
    public class Estado : Entity
     {
         public string Nome { get; set; }
-	    public string Sigla { get; set; }
+        public string Sigla { get; set; }
 
-        public ICollection<Cliente> Cliente { get; set; }
+        public  ICollection<Cidade> Cidade { get; set; }
 
     }
 }

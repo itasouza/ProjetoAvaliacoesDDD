@@ -18,10 +18,5 @@ namespace DevIO.Data.Repository
         }
 
 
-        public async Task<IEnumerable<Produto>> ObterProdutosComAvaliacao()
-        {
-            return await Db.Produtos.AsNoTracking().Include(f => f.Avaliacao)
-                .OrderBy(p => p.NomeProduto).ToListAsync();
-        }
     }
 }

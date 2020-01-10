@@ -14,3 +14,11 @@ C:\GitHub\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\ne
 C:\GitHub\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfo.cs
 C:\GitHub\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
 C:\GitHub\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.deps.json
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.csprojAssemblyReference.cache
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfoInputs.cache
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.AssemblyInfo.cs
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\src\ProjetoAvaliacoesDDD\ProjetoAvaliacoes\src\DevIO.Business\obj\Debug\netcoreapp2.2\DevIO.Business.pdb

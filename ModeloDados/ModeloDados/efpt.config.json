@@ -1,0 +1,54 @@
+﻿{
+   "ContextClassName": "MeuDbContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "DevIO.Business.Models",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Avaliacao]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Cidade]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Cliente]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Estado]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[ImagemProduto]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Pedido]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[PedidoDetalhe]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Produto]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

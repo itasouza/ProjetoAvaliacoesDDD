@@ -8,9 +8,7 @@ namespace DevIO.Business.Interfaces
 {
     public interface IAvaliacaoRepository : IRepository<Avaliacao>
     {
-        Task<IEnumerable<Avaliacao>> ObterAvaliacoesProdutoUsuario();
-        Task<Avaliacao> ObterAvaliacoesProdutoUsuarioEspecifico(int id);
-    
+
 
     }
 }

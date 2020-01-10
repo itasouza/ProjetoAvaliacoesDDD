@@ -6,7 +6,6 @@ namespace DevIO.Business.Interfaces
 {
     public interface IProdutoRepository : IRepository<Produto>
     { 
-        Task<IEnumerable<Produto>> ObterProdutosComAvaliacao();
         Task<Produto> ObterProdutoEspecifico(int id);
         
     }
